@@ -1,0 +1,464 @@
+$ python tests.py > tests_output.txt
+
+########## tests.emptyTest() ##########
+2015-05-29
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+
+
+
+########## tests.sanityCheck() ##########
+2015-01-01
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example.com           1        0          
+
+
+2015-01-02
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example.com           2        100        
+
+
+2015-01-31
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example.com           3        200        
+
+
+2015-02-01
+Removing entries older than 2015-01-02
+Removed:  example.com 1 2015-01-01
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example.com           4        100        
+
+
+
+########## tests.sanityCheck() ##########
+2015-04-29
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   gmail.com             259      0          
+2   yahoo.com             74       0          
+3   hotmail.com           63       0          
+4   outlook.com           56       0          
+5   aol.fr                27       0          
+6   qq.com                23       0          
+7   live.com              17       0          
+8   aol.com               16       0          
+9   yahoo.fr              13       0          
+10   yahoo.co.jp           12       0          
+11   yahoo.com.hk          11       0          
+12   yahoo.co.uk           11       0          
+13   yeah.net              10       0          
+14   yahoo.com.ph          9        0          
+15   admin.in.th           8        0          
+16   ymail.com             7        0          
+17   libero.it             6        0          
+18   yahoo.es              6        0          
+19   126.com               6        0          
+20   bol.com.br            6        0          
+21   foxmail.com           5        0          
+22   manager.in.th         5        0          
+23   yandex.com            5        0          
+24   outlook.fr            5        0          
+25   barid.com             4        0          
+26   voila.fr              4        0          
+27   r7.com                3        0          
+28   163.com               3        0          
+29   lawyer.com            3        0          
+30   yahoo.in              3        0          
+31   yahoo.ca              3        0          
+32   gmx.us                3        0          
+33   terra.com             3        0          
+34   consultant.com        3        0          
+35   msn.com               3        0          
+36   e1.ru                 3        0          
+37   rogers.com            3        0          
+38   yahoo.co.za           3        0          
+39   manresa.net           2        0          
+40   mit.tc                2        0          
+41   superposta.com        2        0          
+42   googlemail.com        2        0          
+43   pisem.net             2        0          
+44   yahoo.se              2        0          
+45   careceo.com           2        0          
+46   rediffmail.com        2        0          
+47   gmx.com               2        0          
+48   vamprose.cn           2        0          
+49   aol.jp                2        0          
+50   gentrd.com.ae         2        0          
+
+
+2015-05-29
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   mit.tc                7        250        
+2   live.com              56       229        
+3   yahoo.co.uk           35       218        
+4   yahoo.co.jp           38       216        
+5   libero.it             18       200        
+6   yahoo.com.hk          32       190        
+7   yahoo.fr              37       184        
+8   yahoo.com             201      171        
+9   yahoo.com.ph          24       166        
+10   aol.fr                70       159        
+11   yahoo.es              15       150        
+12   superposta.com        5        150        
+13   aol.com               39       143        
+14   yahoo.in              7        133        
+15   163.com               7        133        
+16   terra.com             7        133        
+17   consultant.com        7        133        
+18   msn.com               7        133        
+19   gmail.com             600      131        
+20   qq.com                50       117        
+21   outlook.com           119      112        
+22   admin.in.th           17       112        
+23   yeah.net              21       110        
+24   hotmail.com           131      107        
+25   bol.com.br            12       100        
+26   yandex.com            10       100        
+27   barid.com             8        100        
+28   yahoo.co.za           6        100        
+29   126.com               11       83         
+30   outlook.fr            9        80         
+31   rogers.com            5        66         
+32   googlemail.com        3        50         
+33   yahoo.se              3        50         
+34   ymail.com             10       42         
+35   foxmail.com           7        40         
+36   r7.com                4        33         
+37   lawyer.com            4        33         
+38   yahoo.ca              4        33         
+39   voila.fr              5        25         
+40   manager.in.th         6        20         
+41   mail.com              11       0          
+42   live.co.uk            9        0          
+43   ig.com.br             5        0          
+44   aol.de                4        0          
+45   sify.com              3        0          
+46   gmx.us                3        0          
+47   e1.ru                 3        0          
+48   manresa.net           2        0          
+49   pisem.net             2        0          
+50   xd.ae                 2        0          
+
+
+
+########## tests.thirtyDayTest() ##########
+2015-04-28
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   gmail.com             342      0          
+2   yahoo.com             128      0          
+3   hotmail.com           68       0          
+4   outlook.com           63       0          
+5   aol.fr                43       0          
+6   live.com              39       0          
+7   qq.com                27       0          
+8   yahoo.co.jp           26       0          
+9   yahoo.fr              24       0          
+10   yahoo.co.uk           24       0          
+11   aol.com               23       0          
+12   yahoo.com.hk          21       0          
+13   zipmail.com.br        16       0          
+14   yahoo.com.ph          15       0          
+15   rediffmail.com        12       0          
+16   libero.it             12       0          
+17   mail.com              11       0          
+18   yeah.net              11       0          
+19   hotmail.co.uk         10       0          
+20   yahoo.es              9        0          
+21   live.co.uk            9        0          
+22   admin.in.th           9        0          
+23   e-mail.ua             8        0          
+24   financier.com         7        0          
+25   126.com               7        0          
+26   bol.com.br            6        0          
+27   blumail.org           6        0          
+28   ig.com.br             5        0          
+29   mit.tc                5        0          
+30   yandex.com            5        0          
+31   barid.com             4        0          
+32   163.com               4        0          
+33   consultant.com        4        0          
+34   yahoo.in              4        0          
+35   aim.com               4        0          
+36   outlook.fr            4        0          
+37   terra.com             4        0          
+38   careceo.com           4        0          
+39   msn.com               4        0          
+40   aol.co.uk             4        0          
+41   aol.de                4        0          
+42   sify.com              3        0          
+43   hotmail.fr            3        0          
+44   superposta.com        3        0          
+45   ymail.com             3        0          
+46   accountant.com        3        0          
+47   yahoo.co.za           3        0          
+48   kimo.com              2        0          
+49   btinternet.com        2        0          
+50   fengv.com             2        0          
+
+
+2015-05-24
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   gmail.com             342      0          
+2   yahoo.com             128      0          
+3   hotmail.com           68       0          
+4   outlook.com           63       0          
+5   aol.fr                43       0          
+6   live.com              39       0          
+7   qq.com                27       0          
+8   yahoo.co.jp           26       0          
+9   yahoo.fr              24       0          
+10   yahoo.co.uk           24       0          
+11   aol.com               23       0          
+12   yahoo.com.hk          21       0          
+13   zipmail.com.br        16       0          
+14   yahoo.com.ph          15       0          
+15   rediffmail.com        12       0          
+16   libero.it             12       0          
+17   mail.com              11       0          
+18   yeah.net              11       0          
+19   hotmail.co.uk         10       0          
+20   yahoo.es              9        0          
+21   live.co.uk            9        0          
+22   admin.in.th           9        0          
+23   e-mail.ua             8        0          
+24   financier.com         7        0          
+25   126.com               7        0          
+26   blumail.org           6        0          
+27   bol.com.br            6        0          
+28   ig.com.br             5        0          
+29   mit.tc                5        0          
+30   yandex.com            5        0          
+31   barid.com             4        0          
+32   163.com               4        0          
+33   consultant.com        4        0          
+34   yahoo.in              4        0          
+35   aim.com               4        0          
+36   outlook.fr            4        0          
+37   terra.com             4        0          
+38   careceo.com           4        0          
+39   msn.com               4        0          
+40   aol.co.uk             4        0          
+41   aol.de                4        0          
+42   sify.com              3        0          
+43   hotmail.fr            3        0          
+44   example1.com          3        0          
+45   example.com           3        0          
+46   superposta.com        3        0          
+47   ymail.com             3        0          
+48   yahoo.co.za           3        0          
+49   accountant.com        3        0          
+50   btinternet.com        2        0          
+
+
+2015-05-29
+Removing entries older than 2015-04-29
+Removed:  fengv.com 2 2015-04-28
+Removed:  foreignaffair.at.pn 1 2015-04-28
+Removed:  barid.com 4 2015-04-28
+Removed:  cssz.owncube.com 1 2015-04-28
+Removed:  soniaclasesdepiano.com.ar 1 2015-04-28
+Removed:  videobank.it 1 2015-04-28
+Removed:  yahoo.com.sg 1 2015-04-28
+Removed:  email.com 2 2015-04-28
+Removed:  webmail.co.za 1 2015-04-28
+Removed:  mail2online.com 1 2015-04-28
+Removed:  newsletters.pw 1 2015-04-28
+Removed:  hot-shot.com 1 2015-04-28
+Removed:  bestmarksurvey.org 1 2015-04-28
+Removed:  yeah.net 11 2015-04-28
+Removed:  wp.pl 1 2015-04-28
+Removed:  senagua.gob.ec 1 2015-04-28
+Removed:  alvarezcalderon.com 1 2015-04-28
+Removed:  mail2robert.com 1 2015-04-28
+Removed:  pavochenkofinance.tk 1 2015-04-28
+Removed:  hdfcbank.com 1 2015-04-28
+Removed:  capacityafrica.org 1 2015-04-28
+Removed:  sbigb.com 1 2015-04-28
+Removed:  easylisalambert.com 2 2015-04-28
+Removed:  hotmail.co.uk 10 2015-04-28
+Removed:  unorganizations.org 1 2015-04-28
+Removed:  mit.tc 5 2015-04-28
+Removed:  live.co.uk 9 2015-04-28
+Removed:  secretarias.com 1 2015-04-28
+Removed:  mail15.com 2 2015-04-28
+Removed:  mixmail.com 2 2015-04-28
+Removed:  blakulla.net 1 2015-04-28
+Removed:  vamprose.cn 1 2015-04-28
+Removed:  07168.cn 1 2015-04-28
+Removed:  excite.co.uk 1 2015-04-28
+Removed:  gmail.com 342 2015-04-28
+Removed:  online-mail-service.com 1 2015-04-28
+Removed:  laposte.net 2 2015-04-28
+Removed:  europe.com 1 2015-04-28
+Removed:  yahoo.com.tw 2 2015-04-28
+Removed:  aim.com 4 2015-04-28
+Removed:  datafull.com 1 2015-04-28
+Removed:  rocketmail.com 1 2015-04-28
+Removed:  outlook.com 63 2015-04-28
+Removed:  xtianexclusive.com 1 2015-04-28
+Removed:  yandex.com 5 2015-04-28
+Removed:  aol.de 4 2015-04-28
+Removed:  icbcasia.com 1 2015-04-28
+Removed:  xbmail.com 1 2015-04-28
+Removed:  yahoo.fr 24 2015-04-28
+Removed:  sify.com 3 2015-04-28
+Removed:  yahoo.co.uk 24 2015-04-28
+Removed:  bahamamail.com 1 2015-04-28
+Removed:  sylt-photo.de 1 2015-04-28
+Removed:  consultant.com 4 2015-04-28
+Removed:  mail2africa.com 1 2015-04-28
+Removed:  mynet.com 2 2015-04-28
+Removed:  bol.com.br 6 2015-04-28
+Removed:  clerk.com 2 2015-04-28
+Removed:  libero.it 12 2015-04-28
+Removed:  isiltan.com.tr 1 2015-04-28
+Removed:  accountant.com 3 2015-04-28
+Removed:  emirates.net.ae 1 2015-04-28
+Removed:  clarofree.com 1 2015-04-28
+Removed:  daum.net 1 2015-04-28
+Removed:  kimo.com 2 2015-04-28
+Removed:  yahoo.es 9 2015-04-28
+Removed:  kurtz.onmicrosoft.com 1 2015-04-28
+Removed:  163.com 4 2015-04-28
+Removed:  saudia.com 1 2015-04-28
+Removed:  126.com 7 2015-04-28
+Removed:  hotmail.fr 3 2015-04-28
+Removed:  oregonducks.org 1 2015-04-28
+Removed:  she.com 1 2015-04-28
+Removed:  terra.com 4 2015-04-28
+Removed:  careceo.com 4 2015-04-28
+Removed:  capacityafrica.com 1 2015-04-28
+Removed:  mail2america.com 1 2015-04-28
+Removed:  xd.ae 2 2015-04-28
+Removed:  al-fardan-export.com 1 2015-04-28
+Removed:  yahoo.com 128 2015-04-28
+Removed:  financier.com 7 2015-04-28
+Removed:  rediffmail.com 12 2015-04-28
+Removed:  lawyer.com 1 2015-04-28
+Removed:  workmail.co.za 1 2015-04-28
+Removed:  ufoff.co.in 1 2015-04-28
+Removed:  pdcheif.com 1 2015-04-28
+Removed:  powerstar.com.cn 1 2015-04-28
+Removed:  mail2consultant.com 1 2015-04-28
+Removed:  yahoo.co.th 1 2015-04-28
+Removed:  manager.in.th 1 2015-04-28
+Removed:  msn.com 4 2015-04-28
+Removed:  aol.co.uk 4 2015-04-28
+Removed:  mail2finance.com 1 2015-04-28
+Removed:  windowslive.com 1 2015-04-28
+Removed:  live.com 39 2015-04-28
+Removed:  mail2wire.com 1 2015-04-28
+Removed:  bphg.com.cn 1 2015-04-28
+Removed:  twtrhzc.com 1 2015-04-28
+Removed:  mail.ru 1 2015-04-28
+Removed:  chemusa.com 1 2015-04-28
+Removed:  yahoo.se 1 2015-04-28
+Removed:  bt.com 1 2015-04-28
+Removed:  yahoo.com.hk 21 2015-04-28
+Removed:  gloriabrides.com 1 2015-04-28
+Removed:  yahoo.ca 1 2015-04-28
+Removed:  superposta.com 3 2015-04-28
+Removed:  henryancrown.org 1 2015-04-28
+Removed:  admin.in.th 9 2015-04-28
+Removed:  live.fr 1 2015-04-28
+Removed:  dhlexpressintl.com 1 2015-04-28
+Removed:  bvicm.com 1 2015-04-28
+Removed:  rogers.com 2 2015-04-28
+Removed:  luckymail.com 1 2015-04-28
+Removed:  mail333.com 1 2015-04-28
+Removed:  r7.com 1 2015-04-28
+Removed:  myshoppers.net 1 2015-04-28
+Removed:  hotmail.com 68 2015-04-28
+Removed:  yahoo.co.jp 26 2015-04-28
+Removed:  yahoo.com.ph 15 2015-04-28
+Removed:  dgoh.org 1 2015-04-28
+Removed:  outlook.fr 4 2015-04-28
+Removed:  veltrod.in 2 2015-04-28
+Removed:  mail.bg 1 2015-04-28
+Removed:  tesco.pl.tf 1 2015-04-28
+Removed:  yahoo.co.za 3 2015-04-28
+Removed:  log-log.org 1 2015-04-28
+Removed:  aol.com 23 2015-04-28
+Removed:  qq.com 27 2015-04-28
+Removed:  btinternet.com 2 2015-04-28
+Removed:  fastservice.com 1 2015-04-28
+Removed:  threeinoneenterprisescoltd.com.tw 1 2015-04-28
+Removed:  yahoo.com.my 1 2015-04-28
+Removed:  inbox.ru 1 2015-04-28
+Removed:  gmx.com 2 2015-04-28
+Removed:  yahoo.in 4 2015-04-28
+Removed:  nigeria.usembassy.gov 1 2015-04-28
+Removed:  blumail.org 6 2015-04-28
+Removed:  post.com 2 2015-04-28
+Removed:  e-mail.ua 8 2015-04-28
+Removed:  zipmail.com.br 16 2015-04-28
+Removed:  contactoffice.com 1 2015-04-28
+Removed:  firemail.de 1 2015-04-28
+Removed:  mail2world.com 1 2015-04-28
+Removed:  asia.com 1 2015-04-28
+Removed:  ig.com.br 5 2015-04-28
+Removed:  paysandu.com 1 2015-04-28
+Removed:  eclipso.ch 1 2015-04-28
+Removed:  globomail.com 2 2015-04-28
+Removed:  googlemail.com 1 2015-04-28
+Removed:  presidency.com 2 2015-04-28
+Removed:  coolsite.net 1 2015-04-28
+Removed:  free.fr 1 2015-04-28
+Removed:  capacitybuildingonline.com 1 2015-04-28
+Removed:  ymail.com 3 2015-04-28
+Removed:  mail.com 11 2015-04-28
+Removed:  yashrasayan.com 1 2015-04-28
+Removed:  tera.com 1 2015-04-28
+Removed:  foxmail.com 2 2015-04-28
+Removed:  8u8.hk 1 2015-04-28
+Removed:  executivemail.co.za 1 2015-04-28
+Removed:  groupmail.com 1 2015-04-28
+Removed:  voila.fr 1 2015-04-28
+Removed:  scotlandmail.com 1 2015-04-28
+Removed:  qltt.in 1 2015-04-28
+Removed:  aol.fr 43 2015-04-28
+Removed:  yahoo.com.vn 1 2015-04-28
+Removed:  lenta.ru 1 2015-04-28
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example1.com          6        100        
+2   example.com           4        33         
+
+
+
+########## tests.negativeGrowthTest() ##########
+2015-05-24
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example1.com          3        0          
+2   example.com           3        0          
+
+
+2015-05-29
+   +--------------------+-------+------------+
+   |        name        | count | %  growth  |
+   +--------------------+-------+------------+
+1   example.com           2        -33        
+2   example1.com          1        -66        
+
+
+
