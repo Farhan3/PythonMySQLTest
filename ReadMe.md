@@ -21,8 +21,6 @@ Use this table to report the top 50 domains by count sorted by percentage growth
 
 
 ## Solution
-Farhan Arshad - Solution for Index Exchange test
-
 The following assumptions were made for the solution:
 - "percentage growth of the last 30 days compared to the total" meant that
 the percentage growth for a domain would be the increase/decrease in the last 30 days over the total initial count. (see Example 2 below)
