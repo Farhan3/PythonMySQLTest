@@ -52,6 +52,8 @@ Because the probability of new addrs from all domains being added is low, we
 will likely never use 100,000 * 30 rows.
 
 **Example 1:**
+
+```
 +----+-------------+-------+------------+
 | id | name        | count | date       |
 +----+-------------+-------+------------+
@@ -59,6 +61,7 @@ will likely never use 100,000 * 30 rows.
 |  4 | yahoo.com   |     3 | 2015-05-29 |
 |  5 | yahoo.com   |     6 | 2015-05-30 |
 +----+-------------+-------+------------+
+```
 
 During each update, entries older than 30 days are deleted since they no longer
 effect the final output.
